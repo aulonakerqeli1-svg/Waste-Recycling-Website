@@ -15,31 +15,9 @@ JavaScript (for the hamburger menu)
 
 
 
-📂 Project Structure
-/project-root
-│
-├─ /css
-│   ├─ types.css
-│   ├─ process.css
-│   └─ contact.css
-│
-├─ /Img
-│   ├─ logo.png
-│   ├─ Plastic.png
-│   ├─ Paper & Cardboard.jpg
-│   ├─ Organic.jpg
-│   ├─ Hazardous.png
-│   ├─ Metal.jpg
-│   ├─ E-Waste.jpg
-│   └─ contact.jpg
-│
-├─ index.html
-├─ types.html
-├─ process.html
-└─ contact.html
-
 🔗 Links
 GitHub:https://github.com/aulonakerqeli1-svg
+
 LinkedIn:https://www.linkedin.com/in/aulona-kerqeli-660342339/
 
 
