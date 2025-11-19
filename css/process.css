@@ -1,0 +1,147 @@
+/* Reset dhe bazë */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(46, 204, 113, 0.85);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu-icon {
+  font-size: 32px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.links li a:hover {
+  transform: scale(1.1);
+}
+
+/* Wrapper dhe Card */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 100px; /* hapësirë për navbar-in */
+  background-color: #f4f4f4;
+  min-height: calc(100vh - 100px);
+}
+
+.card {
+  background-color: white;
+  width: 800px;
+  max-width: 95%;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #264653;
+  margin-bottom: 20px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.card p {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Responsive për ekran më të vogël */
+@media (max-width: 850px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(39, 174, 96, 0.95);
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .links.active {
+    display: flex;
+  }
+
+  .links li a {
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    width: 100%;
+  }
+}

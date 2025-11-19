@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recycling Process</title>
+  <link rel="stylesheet" href="/css/process.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/Img/logo.png" alt="Logo">
+    </div>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="types.html">Waste Types</a></li>
+      <li><a href="process.html">Recycling Process</a></li>
+  
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <div class="card">
+      <h3>Recycling Process</h3>
+      <div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/MXVRTa4rJ9M" 
+          title="How Recycling Works!" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</div>
+
+      <p>
+        The recycling process involves collecting, sorting, cleaning, and processing waste materials into new products. It reduces landfill waste and conserves natural resources.
+      </p>
+    </div>
+  </div>
+
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>

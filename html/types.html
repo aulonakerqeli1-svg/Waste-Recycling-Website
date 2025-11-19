@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Types</title>
+    <link rel="stylesheet" href="/css/types.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Img/logo.png" alt="Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="types.html">Waste Types</a></li>
+            <li><a href="process.html">Recycling Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- WASTE TYPES SECTION -->
+    <section class="waste-types">
+        <h1>Waste Types</h1>
+        <p class="intro">Discover the different types of waste and learn how to recycle them effectively.</p>
+
+        <div class="waste-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="/Img/Plastic.png" alt="Plastic Waste">
+                <h2>Plastic</h2>
+                <p>Plastic waste includes bottles, packaging, and containers. Always separate plastics for recycling.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="/Img/Paper & Cardboard.jpg" alt="Paper Waste">
+                <h2>Paper</h2>
+                <p>Paper and cardboard can be recycled easily. Keep them clean and dry before disposal.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="/Img/Organic.jpg" alt="Organic Waste">
+                <h2>Organic</h2>
+                <p>Organic waste such as food scraps and garden waste can be composted at home or in community bins.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="/Img/Hazardous.png" alt="Glass Waste">
+               <h2>Hazardous</h2>
+                <p>Hazardous waste includes chemicals, batteries, and electronics. Dispose safely.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="/Img/Metal.jpg" alt="Metal Waste">
+                <h2>Metal</h2>
+                <p>Metal cans, foil, and scrap can be recycled. Separate metals from other waste.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <img src="/Img/E-Waste.jpg" alt="Electronic Waste">
+                <h2>Electronic</h2>
+                <p>E-waste includes old electronics. Take them to specialized recycling centers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT FOR HAMBURGER MENU -->
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

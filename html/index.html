@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Recycling</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/Img/logo.png" alt="Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="types.html">Waste Types</a></li>
+            <li><a href="process.html">Recycling Process</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="container">
+        <div class="home-text fade-in">
+            <h1>Recycle Today, Save Tomorrow</h1>
+            <p>Join us in making the planet cleaner. Learn how to sort and recycle your waste properly and help create a sustainable future for all.</p>
+            <a href="types.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT FOR HAMBURGER MENU -->
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

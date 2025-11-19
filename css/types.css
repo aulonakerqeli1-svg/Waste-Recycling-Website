@@ -1,0 +1,179 @@
+/* ---------------------------------------- */
+/*           RESET & BODY                   */
+/* ---------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+}
+
+/* ---------------------------------------- */
+/*                 NAVBAR                   */
+/* ---------------------------------------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(46, 204, 113, 0.75); /* semi transparent green */
+    backdrop-filter: blur(10px); /* glass effect */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 10;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.navbar:hover {
+    background: rgba(46, 204, 113, 0.9);
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Desktop Menu */
+.links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.links li a:hover {
+    color: #1e1e1e;
+    transform: scale(1.1);
+}
+
+/* Hamburger Menu */
+.menu-icon {
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+
+/* ---------------------------------------- */
+/*              WASTE TYPES                 */
+/* ---------------------------------------- */
+.waste-types {
+    padding: 120px 5% 100px; /* padding-top për navbar fix dhe padding-bottom për celular */
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.waste-types h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #27ae60;
+}
+
+.waste-types .intro {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #555;
+}
+
+/* Grid për cards */
+.waste-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards në rresht për desktop */
+    gap: 30px;
+}
+
+/* Card individual */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #27ae60;
+    margin: 15px 0 5px;
+    font-size: 24px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    color: #444;
+    font-size: 17px;
+}
+
+/* ---------------------------------------- */
+/*               RESPONSIVE                 */
+/* ---------------------------------------- */
+
+/* Tableta: 2 cards për rresht */
+@media (max-width: 992px) {
+    .waste-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular: 1 card për rresht dhe hamburger menu aktivizohet */
+@media (max-width: 600px) {
+    .waste-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(46, 204, 113, 0.95);
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .links li a {
+        font-size: 20px;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .waste-types {
+        padding-top: 140px; /* më shumë space për navbar + hamburger */
+    }
+}
